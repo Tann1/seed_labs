@@ -1,0 +1,4 @@
+I used aes-128-cbc with a 12-byte IV to encrypt the body of pic_original
+and the result was good. Good in a sense that it's hard to tell what the 
+original image was and since our goal was to hide this original image i'd say
+that the job was well done. In contrast, aes-128-ecb which doesn't use an IV did a poor job hiding the original pic. It was blurry and still easy to tell what the original image was from the encrypted version of aes-128-ecb.
